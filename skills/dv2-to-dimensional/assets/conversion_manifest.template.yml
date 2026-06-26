@@ -1,0 +1,38 @@
+source:
+  type: snowflake_data_vault_2
+  database: null
+  schema: null
+  input_paths: []
+
+target:
+  type: dimensional
+  database: null
+  schema: null
+  output_paths:
+    dimensional_ddl: dv2_to_dimensional/outputs/dimensional_ddl
+    query_conversions: dv2_to_dimensional/outputs/query_conversions
+    dbt: dv2_to_dimensional/outputs/dbt
+    docs: dv2_to_dimensional/outputs/docs
+
+user_decisions: []
+assumptions: []
+open_questions: []
+
+mappings:
+  hubs: []
+  links: []
+  satellites: []
+  pit_tables: []
+  bridges: []
+  reference_tables: []
+
+dimensions: []
+facts: []
+bridges: []
+
+validation:
+  row_count_checks: []
+  grain_checks: []
+  scd_checks: []
+  query_equivalence_checks: []
+  blockers: []
